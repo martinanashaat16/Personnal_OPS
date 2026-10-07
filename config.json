@@ -1,0 +1,566 @@
+{
+  "app": {
+    "name": "PersonnelOps",
+    "subtitle": "HR Management"
+  },
+  "storageKeys": {
+    "users": "hr3_users",
+    "hires": "hr3_hires",
+    "contracts": "hr3_contracts",
+    "offboards": "hr3_offboards",
+    "obExtraCols": "hr3_ob_extra_cols",
+    "overtime": "hr3_overtime",
+    "otValueFmt": "hr3_ot_value_fmt",
+    "expanded": "hr3_expanded",
+    "alertsSent": "hr3_alerts_sent",
+    "theme": "hr3_theme",
+    "syncConfig": "hr3_sb_config",
+    "otStdHours": "hr3_ot_std_hours",
+    "otMultNormal": "hr3_ot_mult_normal",
+    "otMultSaturday": "hr3_ot_mult_sat",
+    "otMultOfficial": "hr3_ot_mult_official"
+  },
+  "sync": {
+    "pollMs": 15000,
+    "keys": [
+      "hr3_users",
+      "hr3_hires",
+      "hr3_contracts",
+      "hr3_offboards",
+      "hr3_ob_extra_cols",
+      "hr3_overtime",
+      "hr3_alerts_sent"
+    ],
+    "emptyValues": {
+      "hr3_users": [],
+      "hr3_hires": [],
+      "hr3_contracts": [],
+      "hr3_offboards": [],
+      "hr3_ob_extra_cols": [],
+      "hr3_overtime": [],
+      "hr3_alerts_sent": {}
+    }
+  },
+  "onboarding": {
+    "tasks": [
+      {
+        "id": "p1",
+        "phase": "Preparations",
+        "label": "Onboarding on Apex",
+        "tag": ""
+      },
+      {
+        "id": "p2",
+        "phase": "Preparations",
+        "label": "Signed the contract",
+        "tag": ""
+      },
+      {
+        "id": "p3",
+        "phase": "Preparations",
+        "label": "Bus Arranged",
+        "tag": ""
+      },
+      {
+        "id": "p4",
+        "phase": "Preparations",
+        "label": "Onboarding Email",
+        "tag": ""
+      },
+      {
+        "id": "p5",
+        "phase": "Preparations",
+        "label": "Documents Completed",
+        "tag": ""
+      },
+      {
+        "id": "p6",
+        "phase": "Preparations",
+        "label": "Data Submitted on Oracle",
+        "tag": ""
+      },
+      {
+        "id": "p7",
+        "phase": "Preparations",
+        "label": "Filled Bank application to open an account",
+        "tag": ""
+      },
+      {
+        "id": "p8",
+        "phase": "Preparations",
+        "label": "Open Time Management on apex",
+        "tag": ""
+      },
+      {
+        "id": "p9",
+        "phase": "Preparations",
+        "label": "Received Access Card",
+        "tag": ""
+      },
+      {
+        "id": "p10",
+        "phase": "Preparations",
+        "label": "File got archived",
+        "tag": ""
+      },
+      {
+        "id": "p11",
+        "phase": "Preparations",
+        "label": "Welcome Onboard Announcement",
+        "tag": ""
+      },
+      {
+        "id": "p12",
+        "phase": "Preparations",
+        "label": "Induction Session",
+        "tag": "",
+        "noCount": true
+      },
+      {
+        "id": "p13",
+        "phase": "Preparations",
+        "label": "Laptop",
+        "tag": "",
+        "type": "eligibility"
+      },
+      {
+        "id": "p14",
+        "phase": "Preparations",
+        "label": "Mobile Line",
+        "tag": "",
+        "type": "eligibility"
+      },
+      {
+        "id": "p15",
+        "phase": "Preparations",
+        "label": "Policies Acknowledged",
+        "tag": ""
+      },
+      {
+        "id": "p16",
+        "phase": "Preparations",
+        "label": "Received Medical Card",
+        "tag": ""
+      },
+      {
+        "id": "p17",
+        "phase": "Preparations",
+        "label": "Received Visa Card",
+        "tag": ""
+      },
+      {
+        "id": "p18",
+        "phase": "Preparations",
+        "label": "Attend the Quarterly Onboarding session",
+        "tag": "",
+        "type": "yesno"
+      }
+    ],
+    "phases": [
+      "Preparations"
+    ],
+    "phaseIcons": {
+      "Preparations": "<svg fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"2\" width=\"14\" height=\"14\"><path d=\"M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4\"/></svg>"
+    }
+  },
+  "offboarding": {
+    "tasks": [
+      {
+        "key": "oracle",
+        "type": "checkbox",
+        "label": "Terminate the employee on Oracle"
+      },
+      {
+        "key": "documents",
+        "type": "checkbox",
+        "label": "Signed the required documents"
+      },
+      {
+        "key": "cards",
+        "type": "checkbox",
+        "label": "Provide the access & medical cards"
+      },
+      {
+        "key": "incentives",
+        "type": "yesno",
+        "label": "Eligible for Main Product / Achievement or Sales incentives?"
+      },
+      {
+        "key": "clearance",
+        "type": "clearance",
+        "label": "Clearance Status"
+      },
+      {
+        "key": "medicalDeletion",
+        "type": "checkbox",
+        "label": "Sent the medical deletion"
+      }
+    ]
+  },
+  "quarters": {
+    "calendar": [
+      {
+        "q": 1,
+        "label": "Q1",
+        "range": "Jan – Mar",
+        "months": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "q": 2,
+        "label": "Q2",
+        "range": "Apr – Jun",
+        "months": [
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "q": 3,
+        "label": "Q3",
+        "range": "Jul – Sep",
+        "months": [
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "q": 4,
+        "label": "Q4",
+        "range": "Oct – Dec",
+        "months": [
+          10,
+          11,
+          12
+        ]
+      }
+    ],
+    "contractFiscal": [
+      {
+        "q": 1,
+        "label": "Q1",
+        "range": "Mar – May",
+        "months": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "q": 2,
+        "label": "Q2",
+        "range": "Jun – Aug",
+        "months": [
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "q": 3,
+        "label": "Q3",
+        "range": "Sep – Nov",
+        "months": [
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "q": 4,
+        "label": "Q4",
+        "range": "Dec – Feb",
+        "months": [
+          12,
+          1,
+          2
+        ]
+      }
+    ],
+    "periodFilterMonths": [
+      "Jan–Mar",
+      "Apr–Jun",
+      "Jul–Sep",
+      "Oct–Dec"
+    ]
+  },
+  "dates": {
+    "offboardingColumns": {
+      "lastday": "Last Working Date",
+      "joindate": "Joining Date",
+      "resigndate": "Resignation Date"
+    },
+    "monthNames": [
+      "",
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "contractMonthAbbr": [
+      "jan",
+      "feb",
+      "mar",
+      "apr",
+      "may",
+      "jun",
+      "jul",
+      "aug",
+      "sep",
+      "oct",
+      "nov",
+      "dec"
+    ],
+    "offboardingExpectedFormat": "DD/MM/YYYY (e.g. 15/03/2026), YYYY-MM-DD, or 15 Mar 2026",
+    "monthLookup": {
+      "en": [
+        "january",
+        "february",
+        "march",
+        "april",
+        "may",
+        "june",
+        "july",
+        "august",
+        "september",
+        "october",
+        "november",
+        "december"
+      ],
+      "ar": [
+        "يناير",
+        "فبراير",
+        "مارس",
+        "أبريل",
+        "مايو",
+        "يونيو",
+        "يوليو",
+        "أغسطس",
+        "سبتمبر",
+        "أكتوبر",
+        "نوفمبر",
+        "ديسمبر"
+      ],
+      "extraAliases": {
+        "sept": 9,
+        "ابريل": 4,
+        "يونية": 6,
+        "يوليه": 7,
+        "اغسطس": 8,
+        "اكتوبر": 10
+      }
+    }
+  },
+  "overtime": {
+    "defaultStdHours": 240,
+    "defaultMultipliers": {
+      "normal": 1,
+      "saturday": 1,
+      "official": 1
+    }
+  },
+  "charts": {
+    "palette": [
+      "#2563EB",
+      "#7C3AED",
+      "#D97706",
+      "#059669",
+      "#DC2626",
+      "#0EA5E9",
+      "#DB2777",
+      "#65A30D",
+      "#7C2D12",
+      "#4338CA"
+    ]
+  },
+  "templates": {
+    "hire": {
+      "rows": [
+        [
+          "name",
+          "dept",
+          "title",
+          "code",
+          "startdate",
+          "hr"
+        ],
+        [
+          "Ahmed Hassan",
+          "Finance",
+          "Accountant",
+          "EMP-001",
+          "2026-08-15",
+          "Sara Mahmoud"
+        ]
+      ],
+      "colWidths": [
+        20,
+        16,
+        18,
+        12,
+        14,
+        18
+      ]
+    },
+    "overtime": {
+      "rows": [
+        [
+          "name",
+          "jobtitle",
+          "division",
+          "organization",
+          "code",
+          "date",
+          "actualhours",
+          "normalhours",
+          "saturdayhours",
+          "officialdayshours",
+          "hours",
+          "monthlysalary",
+          "rate",
+          "amount",
+          "status",
+          "reason"
+        ],
+        [
+          "Ahmed Hassan",
+          "Accountant",
+          "Finance Division",
+          "Finance",
+          "EMP-001",
+          "2026-07-14",
+          "8",
+          "3.5",
+          "0",
+          "0",
+          "",
+          "20000",
+          "",
+          "",
+          "Approved",
+          "Month-end closing"
+        ],
+        [
+          "Sara Mahmoud",
+          "HR Specialist",
+          "Corporate Services",
+          "HR",
+          "EMP-014",
+          "2026-07-16",
+          "8",
+          "0",
+          "5",
+          "0",
+          "",
+          "16000",
+          "83.3",
+          "",
+          "Pending",
+          "Payroll cycle"
+        ]
+      ],
+      "colWidths": [
+        20,
+        16,
+        18,
+        16,
+        12,
+        12,
+        11,
+        11,
+        13,
+        16,
+        8,
+        14,
+        8,
+        10,
+        12,
+        24
+      ]
+    },
+    "offboarding": {
+      "rows": [
+        [
+          "Employee Number",
+          "Name",
+          "Company",
+          "Cluster/Supportive Function",
+          "Division",
+          "Unit/Department/Line",
+          "Title",
+          "Job Level",
+          "Hire Date",
+          "Last Working Date",
+          "Resignation Reason",
+          "Company Name",
+          "Business Partner Code",
+          "Business Partner Name",
+          "Grade",
+          "Grade Level",
+          "Bell Curve Class",
+          "Gender",
+          "Terminate the employee on Oracle",
+          "Signed the required documents",
+          "Provide the access & medical cards",
+          "Eligible for Main Product / Achievement or Sales incentives?",
+          "Clearance Status",
+          "Amount to be Transferred",
+          "Documents Received",
+          "Experience Letter",
+          "Bank Transfer",
+          "Due Amount Status",
+          "Clearance Reason",
+          "Sent the medical deletion"
+        ],
+        [
+          "EMP-001",
+          "Ahmed Hassan",
+          "Pharma Group",
+          "R&D",
+          "R&D Business Division",
+          "Finance",
+          "Financial Analyst",
+          "Senior",
+          "2022-04-01",
+          "2026-09-15",
+          "Resignation",
+          "Pharma Group",
+          "BP-01",
+          "Sara Mahmoud",
+          "Grade 3",
+          "G3",
+          "Meets Expectations",
+          "Male",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Clear",
+          "15000",
+          "Yes",
+          "Yes",
+          "Yes",
+          "",
+          "",
+          "Yes"
+        ]
+      ],
+      "colMinWidth": 12,
+      "colMaxWidth": 34,
+      "colPadding": 2
+    }
+  }
+}
